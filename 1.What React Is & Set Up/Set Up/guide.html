@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tutorial</title>
+	</head>
+	<body>
+		<h2>How to create react app?</h2>
+		<a href="https://youtu.be/O79-D0bSx3M?si=udTbZQEzYs1ans2B">Watch here!</a>
+
+		<span>
+			<h2>Summary</h2>
+			<p>React need Nodejs to run</p>
+			<p>Check version nodejs: <code>node -v</code></p>
+			<p>Create React app: <code>npm create vite@latest</code></p>
+			<p>
+				Change folder:
+				<code
+					>cd <strong><em>nameFolder</em></strong></code
+				>
+			</p>
+			<p>
+				Run app: <code>npm run dev</code> <br />(Note: need to be placed
+				directly in the correct React project folder)
+			</p>
+			<p>
+				Commands to run app when downloading a file from Git:
+				<code>npm install</code>
+			</p>
+			<h2>Giải thích từng phần cấu trúc dự án React+Vite</h2>
+			<p>
+				Một dự án React + Vite có cấu trúc khá gọn gàng vì Vite là công cụ build
+				nhẹ và nhanh, thường dùng thay cho Create React App. Dưới đây là cấu
+				trúc cơ bản và ý nghĩa từng phần.
+			</p>
+		</span>
+
+		<span>
+			<h3>1. Cấu trúc cơ bản</h3>
+			<span>
+				<pre>
+my-react-app/
+│
+├── node_modules/
+├── public/
+│   └── vite.svg
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── .gitignore</pre
+				>
+			</span>
+
+			<h3>2. Giải thích từng phần</h3>
+			<h4>1️⃣ node_modules</h4>
+			<ul>
+				<li>Chứa toàn bộ thư viện đã cài bằng npm hoặc yarn</li>
+				<li>
+					Ví dụ:
+					<ul>
+						<li>React</li>
+						<li>React DOM</li>
+						<li>các library khác</li>
+					</ul>
+				</li>
+				<p>📌 Thư mục này không nên chỉnh sửa trực tiếp</p>
+			</ul>
+
+			<h4>2️⃣ public/</h4>
+			<p>Chứa file tĩnh (static files).</p>
+			<span
+				>Ví dụ:
+				<pre>
+public/
+   vite.svg
+   images/</pre
+				>
+			</span>
+			<ul>
+				Các file trong đây:
+				<li>không bị Vite build lại</li>
+				<li>có thể truy cập trực tiếp bằng URL</li>
+			</ul>
+
+			<h4>3️⃣ src/ (Quan trọng nhất)</h4>
+			<p>Đây là source code chính của ứng dụng React.</p>
+			<span>
+				<pre>
+src/
+ ├── assets/
+ ├── components/
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css</pre
+				>
+			</span>
+			<p>assets/: Chứa tài nguyên như: ảnh, icon, font</p>
+			<p>components/: Chứa các React component tái sử dụng.</p>
+			<p>App.jsx: Đây là component gốc của ứng dụng.</p>
+			<p>main.jsx: Đây là entry point của React.</p>
+			<p>index.css: CSS toàn cục của ứng dụng.</p>
+
+			<h4>4️⃣ index.html</h4>
+			<p>File HTML chính của project.</p>
+
+			<h4>5️⃣ package.json</h4>
+
+			<h4>6️⃣ vite.config.js</h4>
+
+			<h4>7️⃣ .gitignore</h4>
+
+			<h4>8️⃣ dist/ (sau khi build)</h4>
+		</span>
+	</body>
+</html>

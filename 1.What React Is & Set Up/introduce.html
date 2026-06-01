@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>What is React?</h2>
+		<p>React is a front-end JavaScript library.</p>
+		<p>React was developed by the Facebook Software Engineer Jordan Walke.</p>
+		<p>React is also known as React.js or ReactJS.</p>
+		<p>React is a tool for building UI components.</p>
+		
+		<h2>How does React Work?</h2>
+		<p>React creates a VIRTUAL DOM in memory.</p>
+		<p>
+			Instead of manipulating the browser's DOM directly, React creates a
+			virtual DOM in memory, where it does all the necessary manipulating,
+			before making the changes in the browser DOM.
+		</p>
+		<p>React only changes what needs to be changed!</p>
+		<p>
+			React finds out what changes have been made, and changes
+			<strong>only</strong> what needs to be changed.
+		</p>
+		<p>
+			You will learn the various aspects of how React does this in the rest of
+			this tutorial.
+		</p>
+
+		<h2>Virtual DOM in React</h2>
+		<p>The Virtual DOM in React is an in-memory, lightweight JavaScript representation of the actual DOM. Instead of directly manipulating the real DOM — which is slow for frequent updates — React updates this virtual copy first, then efficiently syncs changes to the real DOM.</p>
+		<p>When your app’s state or props change, React follows a specific process:</p>
+		<ol type="1">
+			<li>Initial Render – React builds a virtual DOM tree representing the UI.</li>
+			<li>State/Props Update – A new virtual DOM tree is generated to reflect changes.</li>
+			<li>Diffing Algorithm – React compares the new tree with the previous one to find the minimal set of changes.</li>
+			<li>Reconciliation – Only the affected parts of the real DOM are updated.</li>
+			<li>DOM Update – The real DOM is patched with these changes, avoiding full re-renders.</li>
+		</ol>
+		<img src="./ico/vit.jpeg" alt="" style="width: 80vw;">
+
+		<h2>What You Should Already Know</h2>
+		<p>
+			Before you continue you should have a basic understanding of the
+			following:
+		</p>
+		<ul>
+			<li>HTML</a></li>
+			<li>CSS</a></li>
+			<li>JavaScript</a></li>
+		</ul>
+		<h2>How to Create React App?</h2>
+		<a href="./Set Up/guide.html">Guide</a>
+	</body>
+</html>

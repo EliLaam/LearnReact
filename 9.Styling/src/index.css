@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* style được lấy trên web tailwind */
+/* https://tailwindcss.com/docs/installation/using-vite */
+
+p {
+	font-size: var(--text-base); /* 1rem (16px) */
+	line-height: var(--text-base--line-height); /* calc(1.5 / 1) */
+	color: var(--color-white);
+	background-color: var(--color-indigo-400);
+}
+
+pre {
+	background-color: rgba(37, 37, 37, 0.84);
+	color: white;
+}
+
+/* style hinh dang */
+.mix-blend-multiply {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}

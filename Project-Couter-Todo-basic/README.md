@@ -1,0 +1,1 @@
+This project just practice basic counter and todo list app.

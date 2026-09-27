@@ -1,16 +1,27 @@
-# React + Vite
+## Use Effect trong React là một hook dùng để xử lý các "side effect" (tác động phụ) trong component, ví dụ như:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Gọi API
+- Cập nhật DOM
+- setTimeout
+- setInterval
+- Lắng nghe hoặc hủy lắng nghe event,..
 
-Currently, two official plugins are available:
+## Sau khi React render xong component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+useEffect = "React ơi, sau khi render xong, hãy giúp tôi làm cái này nhé".
 
-## React Compiler
+- Đối với fetch API:
+  Nó sẽ chạy từ trên xuống sau khi render, gặp hàm Effect React sẽ chạy tiếp tục và khi nào fetch api xong thì nó sẽ đưa ra kết quả.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cách dùng cơ bản
 
-## Expanding the ESLint configuration
+import {useEffect} from "react"
+_useEffect(callback, [deps])_
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+useEffect(()=>{
+// code xử lý side effect ở đây
+}, [dependency]);
+
+1. Nếu **không truyền** dependency, hàm callback sẽ chạy _sau mỗi lần render_
+2. Nếu mảng dependency là **[]** (rỗng), hàm chỉ _chạy 1 lần sau khi component mount_
+3. Truyền **giá trị** => Chạy lại mỗi khi _giá trị_ trong mảng dependency _thay đổi_

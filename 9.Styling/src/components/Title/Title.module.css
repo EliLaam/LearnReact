@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* style cho title */
+
+.title {
+	font-size: var(--text-4xl); /*2.25rem (36px)*/
+	line-height: var(--text-4xl--line-height); /* calc(2.5 / 2.25) */
+}
+
+.color {
+	color: var(--color-white);
+	background-color: var(--color-sky-600);
+}

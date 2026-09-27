@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+}
+
+header {
+	height: 3rem;
+	background-color: rgb(217, 189, 243);
+}
+
+header div {
+	height: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+img {
+	width: 20px;
+	height: 20px;
+	background-color: blueviolet;
+}
+
+nav {
+	background-color: rgb(151, 156, 219);
+	width: max-content;
+	display: flex;
+}
+
+li {
+	margin: 0 1rem;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.about {
+	text-align: center;
+	line-height: 3rem;
+}
+
+.list-card {
+	color: aliceblue;
+	background-color: brown;
+	margin: 3rem;
+	padding: 2rem;
+	display: flex;
+	gap: 2rem;
+}
+
+.contact {
+	text-align: center;
+}
+
+button {
+	color: rgb(215, 207, 207);
+	background-color: blue;
+	padding: 0.2rem;
+}

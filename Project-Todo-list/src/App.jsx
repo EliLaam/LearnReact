@@ -12,7 +12,7 @@ function App() {
 			{/* My First Code: no useEffect */}
 			{/* <TodoBasic /> */}
 
-			{/* Try again */}
+			{/* todo with useEffect */}
 			{/* <TodoHook /> */}
 
 			{/* another way */}

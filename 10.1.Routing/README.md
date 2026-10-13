@@ -22,7 +22,7 @@ _Method 1: React Plain_
 
 _Method 2: React Router_
 
-- Create a new project
+- Create a new project folder
 - npx create-react-router@latest .
 
 ## Structure React Router

@@ -1,16 +1,23 @@
-# React + Vite
+Everyone who is new to React is confused by React props, because they are never mentioned in any other framework, and rarely explained on their own. They are one of the early things you will learn in React after grasping React’s JSX syntax. Essentially React component props are used to pass data from component to component.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## In this tutorial, I want to explain props in React in greater detail by going step by step through React props examples.
 
-Currently, two official plugins are available:
+# Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Component Props by Example
+React Props vs. State
+How to pass Props from child to parent Component
+React Props are just the Communication Channel
+React Props Destructuring
+React Spread Props
+React Rest Props
+React props with Default Value
+React’s children prop
+How to pass Components as Props
+Children as a Function
+React’s Context API for Prop Drilling
+How to set Props to State
+React Props Pitfalls
+React props are not being passed in Components
+React props key is undefined
+Pass props to Styled Components
